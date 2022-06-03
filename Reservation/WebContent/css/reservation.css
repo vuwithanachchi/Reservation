@@ -1,0 +1,73 @@
+@charset "ISO-8859-1";
+
+/*
+...................header part bg color.......................................*/
+.productData{
+	 background-image: linear-gradient(white, #eee3fa );
+	 width:100%;
+	  		}
+/*
+...................header part text.......................................*/
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #ffa5d8;
+  font-size: 50px;
+  font-weight: 700;
+  stroke-width: 3;
+  animation: textAnimate 2s infinite alternate;
+  			}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:hsl(189, 68%, 75%)
+	  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: hsla(189, 68%, 75%,0%)
+  }
+}
+
+/*
+...................navigation bar.......................................*/
+.menu{list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  font-size: 20px;
+	  }
+.menus{
+	  float: left;;
+	}
+.me{
+	display: block;
+	color: #29afba;
+  	text-align: center;
+  	padding: 14px 16px;
+ 	}
+   
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: pink;
+			}
+	
+	
+		
+.glow-on{
+background-color: #006622; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
